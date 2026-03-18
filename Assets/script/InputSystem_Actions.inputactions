@@ -600,15 +600,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "pause",
-                    "type": "Button",
-                    "id": "29e5c823-07de-4d76-ae5a-866db57d4769",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1027,17 +1018,6 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "13bbaa8c-db66-4e03-9fce-4c4f1aed2c1d",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
