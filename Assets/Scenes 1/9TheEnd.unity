@@ -4140,7 +4140,7 @@ MonoBehaviour:
   dialogueText: {fileID: 2015082580}
   portraitImage: {fileID: 671379971}
   canvasGroup: {fileID: 504770427}
-  dialogueLine: ......
+  dialogueLine: You have such a beautiful...body...
   startDelay: 0
   typingSpeed: 0.04
   timeBeforeFade: 4
@@ -10048,19 +10048,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608824841}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.4380362, y: 2.438036, z: 2.4380362}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1557000749}
-  m_Father: {fileID: 695656481}
+  m_Father: {fileID: 1798603198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 463.3098, y: 219.96509}
+  m_SizeDelta: {x: 415, y: 233}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &611470797
 GameObject:
   m_ObjectHideFlags: 0
@@ -10663,7 +10663,6 @@ Transform:
   - {fileID: 564944169}
   - {fileID: 1158771465}
   - {fileID: 404910256}
-  - {fileID: 608824845}
   - {fileID: 504770431}
   - {fileID: 1564675299}
   - {fileID: 1894154087}
@@ -14015,14 +14014,14 @@ RectTransform:
   m_GameObject: {fileID: 1109498745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.66414, y: 0.81726414, z: 0.66414}
+  m_LocalScale: {x: 0.66414, y: 0.6641399, z: 0.66414}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1735131706}
+  m_Father: {fileID: 1798603198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.3536072}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 70, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1109498747
@@ -17931,14 +17930,14 @@ RectTransform:
   m_GameObject: {fileID: 1557000748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.14, y: 1.667959, z: 2.14}
+  m_LocalScale: {x: 0.38472924, y: 0.29986566, z: 0.38472924}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 608824845}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.593, y: 473}
+  m_AnchoredPosition: {x: 13, y: -51}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1557000750
@@ -18026,7 +18025,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -7.984165, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -18180,6 +18179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f4b23faab25c544a34eba364c502fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QTESystem
+  timerText: {fileID: 1557000750}
+  defaultTime: 5
+  zoneMoveSpeed: 350
   qteOverlay: {fileID: 0}
   timingContainer: {fileID: 1798603197}
   movingCircle: {fileID: 1109498746}
@@ -20237,8 +20239,6 @@ RectTransform:
   m_LocalScale: {x: 0.41016617, y: 0.33331668, z: 0.41016617}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1751021496}
-  - {fileID: 1109498746}
   - {fileID: 1798603198}
   m_Father: {fileID: 523676770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20337,14 +20337,14 @@ RectTransform:
   m_GameObject: {fileID: 1751021495}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.2536, z: 1}
+  m_LocalScale: {x: 1, y: 1.018723, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1735131706}
+  m_Father: {fileID: 1798603198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 1.09998}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751021497
@@ -20951,7 +20951,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.2305601, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 608824845}
+  - {fileID: 1109498746}
+  - {fileID: 1751021496}
   m_Father: {fileID: 1735131706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -26549,24 +26552,8 @@ MonoBehaviour:
   inputSmoothTime: 0.1
   animator: {fileID: 1894532302}
   audioSource: {fileID: 1720774290}
+  footstep: {fileID: 0}
   stepInterval: 0.5
-  footstepSets:
-  - surfaceTag: wood
-    clips:
-    - {fileID: 8300000, guid: 76c66b3ae15685a45a334b0628d1edd1, type: 3}
-  - surfaceTag: title
-    clips:
-    - {fileID: 8300000, guid: 0909de896e9029541b92ae05fe15e4b6, type: 3}
-  - surfaceTag: hall
-    clips:
-    - {fileID: 8300000, guid: d2cb06eb080d41b47981392fb74adc67, type: 3}
-  - surfaceTag: road
-    clips:
-    - {fileID: 8300000, guid: e3edc2a270af5c04886ab9c5fa4fced6, type: 3}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  groundCheckDistance: 1
 --- !u!143 &1894532301
 CharacterController:
   m_ObjectHideFlags: 0

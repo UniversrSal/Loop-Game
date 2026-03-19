@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes 1/9TheEnd.unity
+- path: Assets/Scenes 1/6TakeTheTrashOut.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

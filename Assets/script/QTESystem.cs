@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Collections;
+using TMPro;
 
 public class QTESystem : MonoBehaviour
 {
@@ -11,6 +12,16 @@ public class QTESystem : MonoBehaviour
     private KeyCode key;
     private float timer;
     private Action<bool> onResult;
+
+    [Header("Timer UI")]
+    public TextMeshProUGUI timerText;
+
+    [Header("QTE Timing")]
+    public float defaultTime =3f;
+
+    [Header("Success Zone Movement")]
+    public float zoneMoveSpeed = 200f;
+    private int zoneDirection = 1;
 
     [Header("Overlay & Timing UI")]
     public GameObject qteOverlay;
@@ -75,6 +86,17 @@ public class QTESystem : MonoBehaviour
         // Check input
         if (Input.GetKeyDown(key))
             CheckTiming();
+
+        MoveCircle();
+        MoveSuccessZone();
+
+        if (timerText !=null)
+    {
+        float seconds = Mathf.Floor(timer);
+        float milliseconds = (timer - seconds) * 100f;
+
+        timerText.text = $"{seconds:0}:{milliseconds:00}";
+    }
     }
 
     // -----------------------------
@@ -86,7 +108,7 @@ public class QTESystem : MonoBehaviour
 
         QTEActive = true;
         this.key = key;
-        timer = timeout;
+        timer = defaultTime;
         onResult = callback;
         qteActive = true;
 
@@ -190,6 +212,27 @@ public class QTESystem : MonoBehaviour
             obj.SetActive(show);
     }
 
+    void MoveSuccessZone()
+{
+    if (successZone == null) return;
+
+    Vector2 pos = successZone.anchoredPosition;
+    pos.x += zoneDirection * zoneMoveSpeed * Time.unscaledDeltaTime;
+
+    if (pos.x >= maxX)
+    {
+        pos.x = maxX;
+        zoneDirection = -1;
+    }
+    else if (pos.x <= minX)
+    {
+        pos.x = minX;
+        zoneDirection = 1;
+    }
+
+    successZone.anchoredPosition = pos;
+}
+
     void HideAllUI()
     {
         ShowUI(qteOverlay, false);
@@ -197,4 +240,6 @@ public class QTESystem : MonoBehaviour
         ShowUI(successImage, false);
         ShowUI(failImage, false);
     }
+
+    
 }

@@ -435,6 +435,7 @@
 "Assets/script/ElevatorSequence.cs"
 "Assets/script/FootstepSurface.cs"
 "Assets/script/GameFlowManager.cs"
+"Assets/script/GunPickUp.cs"
 "Assets/script/HeadLookAt.cs"
 "Assets/script/Idle.cs"
 "Assets/script/InputSystem_Actions.cs"
